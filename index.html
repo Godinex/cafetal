@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAFETAL · Ludens Docere</title>
+<meta name="description" content="Juego de dibujar y escribir para 3 a 6 personas, ambientado en los cafetales de Costa Rica. Diseña tu cafetal en la ladera: surcos, sombra, agua, fauna y leyendas.">
+<meta property="og:title" content="CAFETAL — draw &amp; write en las laderas de Costa Rica">
+<meta property="og:description" content="Diseña el cafetal más productivo y mejor cuidado de tu zona. Juego de Ludens Docere.">
+<meta property="og:image" content="img/portada.jpg">
+<link rel="icon" href="img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,800;1,400&family=Alegreya+Sans:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#inicio"><img src="img/icono.png" alt=""> CAFETAL</a>
+  <button class="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav>
+    <a href="#juego">El juego</a>
+    <a href="#como-se-juega">Cómo se juega</a>
+    <a href="#cafetal">El cafetal</a>
+    <a href="#noche">De noche</a>
+    <a href="#descargas">Descargas</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <p class="kicker">Ludens Docere presenta</p>
+  <h1><img class="logo" src="img/logo.png" alt="CAFETAL"></h1>
+  <p class="tagline">Draw &amp; write en las laderas de Costa Rica</p>
+  <div class="hero-art"><img src="img/portada.jpg" alt="Laderas sembradas de café con niebla entre las montañas y una quebrada en el fondo del valle"></div>
+  <div class="hero-text">
+    <p class="lede">Te toca una finca en la ladera y cuatro rondas, de la floración a la cogida, para convertirla en el cafetal más productivo y mejor cuidado de tu zona. Escoge cartas del centro, dibuja surcos que siguen las curvas de nivel, cuida la quebrada, siembra sombra… y deja espacio para la fauna.</p>
+    <ul class="facts">
+      <li><strong>3–6</strong><span>personas</span></li>
+      <li><strong>12+</strong><span>años</span></li>
+      <li><strong>30–40</strong><span>minutos</span></li>
+      <li><strong>70</strong><span>cartas</span></li>
+    </ul>
+    <div class="ctas">
+      <a class="btn" href="#descargas">Print &amp; play</a>
+      <a class="btn ghost" href="#cafetal">Recorrer el cafetal</a>
+    </div>
+  </div>
+</section>
+
+<section id="juego" class="band">
+  <div class="wrap">
+    <h2 class="sec">El juego</h2>
+    <div class="orn">✦ ✦ ✦</div>
+    <div class="three">
+      <article>
+        <img src="img/cartas/caturra.jpg" alt="">
+        <h3>Una finca en la ladera</h3>
+        <p>Cada persona dibuja en su hoja, una cuadrícula de 8 × 5 casillas cruzada por curvas de nivel. Los surcos van paralelos a la curva y el agua siempre corre cuesta abajo.</p>
+      </article>
+      <article>
+        <img src="img/cartas/poro-florecido.jpg" alt="">
+        <h3>Prácticas de verdad</h3>
+        <p>Los puntos grandes vienen de combinar bien: sombra junto al café, sotobosque protegiendo la quebrada, colmenas lejos del agua. Lo que puntúa es lo que se hace en una finca bien cuidada.</p>
+      </article>
+      <article>
+        <img src="img/cartas/yiguirro-cantor.jpg" alt="">
+        <h3>Café, gente y monte</h3>
+        <p>Variedades, árboles de sombra, fauna, el trabajo de la cogida y hasta las leyendas del camino. El diseño se validó jugando, con la asesoría del Instituto del Café de Costa Rica (ICAFE).</p>
+      </article>
+    </div>
+    <h3 class="sub">Cinco zonas cafetaleras</h3>
+    <p class="center">Al empezar, cada quien recibe una zona al azar. Todas usan las mismas reglas, pero cada una premia el doble en combos distintos.</p>
+    <div id="zonas" class="zonas"></div>
+  </div>
+</section>
+
+<section id="como-se-juega">
+  <div class="wrap">
+    <h2 class="sec">Cómo se juega</h2>
+    <div class="orn">✦ ✦ ✦</div>
+    <div class="rules">
+      <div class="step"><span class="n">1</span>
+        <h3>Recibe tu zona</h3>
+        <p>Toma la hoja de tu zona, un lápiz y tus fichas de <b>Jornal</b>. La partida dura cuatro rondas, una por estación del café: <b>Floración</b>, <b>Granazón</b>, <b>Maduración</b> y <b>Cogida</b>.</p>
+      </div>
+      <div class="step"><span class="n">2</span>
+        <h3>Escoge del centro</h3>
+        <p>Se revelan tantas cartas como personas haya. Por turnos, cada quien toma una gratis y el hueco se repone del mazo, hasta reunir <b>4 cartas</b> en la ronda. Las cartas de Jornal no se dibujan: se cambian por una ficha.</p>
+      </div>
+      <div class="step"><span class="n">3</span>
+        <h3>Todos dibujan a la vez</h3>
+        <p>Al cierre de la ronda, cada quien traza en su hoja los elementos de sus cartas respetando las reglas de trazado. Si algo no cabe de forma legal, la carta se descarta. La Floración regala un surco y la Cogida, una ficha de Jornal.</p>
+      </div>
+      <div class="step"><span class="n">4</span>
+        <h3>Cuenta la cosecha</h3>
+        <p>Después de la Cogida, cada quien revisa su terreno y <b>encierra en un círculo</b> los grupos de casillas que cumplen un combo de su hoja. Un mismo combo puede puntuar varias veces si los grupos no comparten casillas.</p>
+      </div>
+    </div>
+    <div class="jornal">
+      <img src="img/vale-jornal.jpg" alt="Ficha de Jornal con forma de vale antiguo de café">
+      <div>
+        <h3>Las fichas de Jornal</h3>
+        <p>Tienen la forma de los antiguos vales de café. Sirven para renovar todas las cartas del centro de draft cuando nada te sirve, para repetir un elemento que ya dibujaste y para hacer tratos con el resto de la mesa. Una vez por partida, además, puedes gastar una para comprar una carta extra o cambiar una carta con otra persona.</p>
+      </div>
+    </div>
+    <h3 class="sub">Seis formas de puntuar</h3>
+    <div class="types">
+      <div><b>Surcos</b><span>1 punto por cada casilla de surco.</span></div>
+      <div><b>Combos</b><span>El valor de tu hoja por cada grupo encerrado; el doble en los de tu zona.</span></div>
+      <div><b>Colección</b><span>8 puntos, una sola vez, si tienes los ocho elementos del terreno.</span></div>
+      <div><b>Variedad</b><span>Fauna, leyendas y adornos distintos: puntúan al cuadrado.</span></div>
+      <div><b>Resp. social</b><span>1, 4 o 9 puntos según cuántas fichas reúnas.</span></div>
+      <div><b>Jornales</b><span>1 punto por cada ficha sin gastar.</span></div>
+    </div>
+    <p class="note">El empate lo gana quien encerró más combos; si persiste, quien tenga la quebrada mejor protegida.</p>
+  </div>
+</section>
+
+<section id="cafetal" class="band">
+  <div class="wrap">
+    <h2 class="sec">El cafetal</h2>
+    <div class="orn">✦ ✦ ✦</div>
+    <p class="center">Las 70 cartas del juego, cada una con su ilustración. Toca una para ver qué es y cómo se dibuja.</p>
+    <div class="filters" role="group" aria-label="Filtros del cafetal">
+      <div class="chips" id="f-tipo"></div>
+      <input id="f-q" type="search" placeholder="Buscar por nombre…" aria-label="Buscar carta">
+    </div>
+    <p class="count" id="count"></p>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="noche" class="dark">
+  <div class="wrap">
+    <p class="kicker light">Cuando cae la noche</p>
+    <h2 class="sec light">Leyendas del camino</h2>
+    <div class="orn">✦ ✦ ✦</div>
+    <p class="center light-text">De regreso de la cogida, por el camino de la finca, se cuentan otras historias. La Segua, el Cadejo y la Llorona aparecen en el mazo como cartas de adorno: se dibujan en cualquier casilla libre, no cuentan para ningún combo y suman al <b>Bono de variedad</b> junto con la fauna y las flores.</p>
+    <div class="grid noche" id="grid-noche"></div>
+  </div>
+</section>
+
+<section id="descargas">
+  <div class="wrap">
+    <h2 class="sec">Descargas</h2>
+    <div class="orn">✦ ✦ ✦</div>
+    <div class="dl">
+      <a class="soon"><strong>Cartas para imprimir</strong><span>70 cartas tamaño póker y 2 en blanco, 8 por hoja carta, más las cartas de zona y el mantel de mesa · PDF</span><em>Próximamente</em></a>
+      <a class="soon"><strong>Manual de reglas</strong><span>Reglas, referencia rápida, los doce trazos y glosario del cafetal · PDF</span><em>Próximamente</em></a>
+      <a class="soon"><strong>Hojas de jugador</strong><span>Las cinco zonas, dos por hoja, con los combos al reverso · PDF</span><em>Próximamente</em></a>
+      <a class="soon"><strong>Fichas de Jornal</strong><span>Una hoja de vales recortables · PDF</span><em>Próximamente</em></a>
+    </div>
+    <p class="note">CAFETAL está en su versión de prueba (V3). Los archivos para imprimir se publican aquí en cuanto quede lista la edición final.</p>
+  </div>
+</section>
+
+<footer>
+  <p><b>CAFETAL</b> · Diseño y textos: Gustavo Godínez Vargas · Ludens Docere, 2026</p>
+  <p class="small">Con agradecimiento al Instituto del Café de Costa Rica (ICAFE) por su asesoría durante la validación del juego.</p>
+</footer>
+
+<dialog id="ficha" aria-labelledby="fx-name">
+  <button class="close" aria-label="Cerrar">×</button>
+  <div class="fx">
+    <img id="fx-img" alt="">
+    <div class="fx-body">
+      <p class="fx-num" id="fx-num"></p>
+      <h3 id="fx-name"></h3>
+      <p class="fx-tipo" id="fx-tipo"></p>
+      <p id="fx-nota"></p>
+      <p class="fx-pareja" id="fx-pareja"></p>
+      <div class="fx-dato"><span>Cómo se dibuja</span><p id="fx-regla"></p></div>
+      <div class="fx-nav"><button id="fx-prev">← Anterior</button><button id="fx-next">Siguiente →</button></div>
+    </div>
+  </div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

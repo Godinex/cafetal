@@ -1,0 +1,666 @@
+{
+"tipos": {
+"surco": {
+"nombre": "Surco de café",
+"color": "#2e7d32",
+"regla": "3 casillas contiguas, paralelas a la curva de nivel. Nunca la cruzan."
+},
+"sombra": {
+"nombre": "Árbol de sombra",
+"color": "#1a9a7a",
+"regla": "1 casilla libre. Máximo 8 por hoja."
+},
+"musacea": {
+"nombre": "Musácea",
+"color": "#d9628f",
+"regla": "1 casilla que toque un surco. Máximo 6 por hoja."
+},
+"sotobosque": {
+"nombre": "Sotobosque",
+"color": "#c8413f",
+"regla": "Casillas que tocan agua y protegen la quebrada. Como el agua, puede trazarse en diagonal."
+},
+"agua": {
+"nombre": "Agua",
+"color": "#2a6fc4",
+"regla": "3 casillas de quebrada, siempre cuesta abajo."
+},
+"fauna": {
+"nombre": "Fauna",
+"color": "#5b3fa8",
+"regla": "1 casilla. Puede ir sobre el agua. Máximo 6 por hoja."
+},
+"caseta": {
+"nombre": "Caseta de beneficio",
+"color": "#e06a2c",
+"regla": "1 casilla libre. Máximo 2 por hoja."
+},
+"colmena": {
+"nombre": "Colmena",
+"color": "#2b2b2b",
+"regla": "1 casilla que no toque agua. Solo 1 por hoja."
+},
+"jornal": {
+"nombre": "Jornal",
+"color": "#c99a1e",
+"regla": "No se dibuja: se cambia al instante por 1 ficha de Jornal."
+},
+"social": {
+"nombre": "Responsabilidad social",
+"color": "#8a6a2f",
+"regla": "Se cambia por 1 ficha. Al final puntúa al cuadrado: 1, 4 o 9 puntos."
+},
+"leyenda": {
+"nombre": "Leyenda",
+"color": "#2f3570",
+"regla": "Se dibuja en cualquier casilla libre. No cuenta para combos; suma al Bono de variedad."
+},
+"decoracion": {
+"nombre": "Decoración",
+"color": "#9c3d78",
+"regla": "Se dibuja en cualquier casilla libre. No cuenta para combos; suma al Bono de variedad y a Sostenibilidad."
+}
+},
+"cartas": [
+{
+"id": 1,
+"slug": "almacigo",
+"nombre": "Almácigo",
+"tipo": "surco",
+"nota": "El vivero donde crecen las plantitas de café, en bolsas y bajo sombra, antes de llevarlas al campo.",
+"img": "img/cartas/almacigo.jpg"
+},
+{
+"id": 2,
+"slug": "caturra",
+"nombre": "Caturra",
+"tipo": "surco",
+"nota": "Variedad de porte bajo que permitió sembrar más plantas por hectárea. Fue clave en la modernización del café costarricense.",
+"img": "img/cartas/caturra.jpg"
+},
+{
+"id": 3,
+"slug": "catuai-rojo",
+"nombre": "Catuaí rojo",
+"tipo": "surco",
+"nota": "Variedad nacida de cruzar Mundo Novo con Caturra. Es de las más sembradas en Costa Rica.",
+"img": "img/cartas/catuai-rojo.jpg"
+},
+{
+"id": 4,
+"slug": "villa-sarchi",
+"nombre": "Villa Sarchí",
+"tipo": "surco",
+"nota": "Variedad que surgió como mutación natural en Sarchí, Alajuela. De porte bajo y muy adaptada a la altura.",
+"img": "img/cartas/villa-sarchi.jpg"
+},
+{
+"id": 5,
+"slug": "geisha",
+"nombre": "Geisha",
+"tipo": "surco",
+"nota": "Variedad de origen etíope, famosa por su taza floral. Hoy se cultiva en fincas de altura para cafés de especialidad.",
+"img": "img/cartas/geisha.jpg"
+},
+{
+"id": 6,
+"slug": "surco-de-la-loma",
+"nombre": "Surco de la loma",
+"tipo": "surco",
+"nota": "Hilera que sigue la curva de nivel de la ladera para frenar el agua de lluvia y proteger el suelo.",
+"img": "img/cartas/surco-de-la-loma.jpg"
+},
+{
+"id": 7,
+"slug": "resiembra",
+"nombre": "Resiembra",
+"tipo": "surco",
+"nota": "Volver a sembrar donde se perdieron plantas, para que el cafetal no quede con huecos.",
+"img": "img/cartas/resiembra.jpg"
+},
+{
+"id": 8,
+"slug": "poda-de-renovacion",
+"nombre": "Poda de renovación",
+"tipo": "surco",
+"nota": "Poda que rejuvenece las plantas viejas para que vuelvan a producir con fuerza.",
+"img": "img/cartas/poda-de-renovacion.jpg"
+},
+{
+"id": 9,
+"slug": "esqueleteo",
+"nombre": "Esqueleteo",
+"tipo": "surco",
+"nota": "Poda fuerte que deja solo el «esqueleto» de la planta: tronco y ramas principales, para que rebrote.",
+"img": "img/cartas/esqueleteo.jpg"
+},
+{
+"id": 10,
+"slug": "hilera-larga",
+"nombre": "Hilera larga",
+"tipo": "surco",
+"nota": "Un surco largo y parejo, de los que se recorren de punta a punta en la cogida.",
+"img": "img/cartas/hilera-larga.jpg"
+},
+{
+"id": 11,
+"slug": "surco-de-traspatio",
+"nombre": "Surco de traspatio",
+"tipo": "surco",
+"nota": "El café de la casa: unas cuantas matas junto a la vivienda, con las gallinas y la ropa tendida.",
+"img": "img/cartas/surco-de-traspatio.jpg"
+},
+{
+"id": 12,
+"slug": "surco-nuevo",
+"nombre": "Surco nuevo",
+"tipo": "surco",
+"nota": "Terreno recién preparado, con las plantitas del almácigo apenas trasplantadas.",
+"img": "img/cartas/surco-nuevo.jpg"
+},
+{
+"id": 13,
+"slug": "higueron",
+"nombre": "Higuerón",
+"tipo": "sombra",
+"nota": "Árbol enorme del género Ficus, de raíces aéreas. Sus frutos alimentan a muchísimas aves y murciélagos.",
+"img": "img/cartas/higueron.jpg"
+},
+{
+"id": 14,
+"slug": "poro-joven",
+"nombre": "Poró joven",
+"tipo": "sombra",
+"nota": "El poró es la sombra cafetalera por excelencia: fija nitrógeno en el suelo y se poda para regular la luz.",
+"img": "img/cartas/poro-joven.jpg"
+},
+{
+"id": 15,
+"slug": "guacimo",
+"nombre": "Guácimo",
+"tipo": "sombra",
+"nota": "Árbol de potreros y cercas cuyos frutos comen el ganado y la fauna silvestre.",
+"img": "img/cartas/guacimo.jpg"
+},
+{
+"id": 16,
+"slug": "aguacate-de-sombra",
+"nombre": "Aguacate de sombra",
+"tipo": "sombra",
+"nota": "Muchos cafetales combinan la sombra con árboles frutales que dan otra cosecha a la familia.",
+"img": "img/cartas/aguacate-de-sombra.jpg"
+},
+{
+"id": 17,
+"slug": "poro-florecido",
+"nombre": "Poró florecido",
+"tipo": "sombra",
+"nota": "En verano el poró se cubre de flores anaranjadas que atraen colibríes y otras aves.",
+"img": "img/cartas/poro-florecido.jpg"
+},
+{
+"id": 18,
+"slug": "guaba-de-bejuco",
+"nombre": "Guaba de bejuco",
+"tipo": "sombra",
+"nota": "La guaba (Inga) da sombra, abona el suelo con sus hojas y regala vainas de pulpa dulce.",
+"img": "img/cartas/guaba-de-bejuco.jpg"
+},
+{
+"id": 19,
+"slug": "cedro-amargo",
+"nombre": "Cedro amargo",
+"tipo": "sombra",
+"nota": "Árbol maderable de gran valor que también puede acompañar al café como sombra.",
+"img": "img/cartas/cedro-amargo.jpg"
+},
+{
+"id": 20,
+"slug": "laurel",
+"nombre": "Laurel",
+"tipo": "sombra",
+"nota": "Árbol maderable de copa rala, muy usado como sombra porque deja pasar buena luz.",
+"img": "img/cartas/laurel.jpg"
+},
+{
+"id": 21,
+"slug": "almendro-de-montana",
+"nombre": "Almendro de montaña",
+"tipo": "sombra",
+"nota": "Gigante del bosque. Sus semillas son el alimento principal de la lapa verde.",
+"img": "img/cartas/almendro-de-montana.jpg",
+"pareja": "Su compañero en el cafetal: Lapa verde."
+},
+{
+"id": 22,
+"slug": "guanacaste",
+"nombre": "Guanacaste",
+"tipo": "sombra",
+"nota": "El árbol nacional de Costa Rica, de copa ancha y vainas en forma de oreja.",
+"img": "img/cartas/guanacaste.jpg",
+"pareja": "Su compañero en el cafetal: Mono congo."
+},
+{
+"id": 23,
+"slug": "ceiba",
+"nombre": "Ceiba",
+"tipo": "sombra",
+"nota": "Árbol de tronco colosal y raíces de contrafuerte. Sus flores abren de noche y las polinizan murciélagos.",
+"img": "img/cartas/ceiba.jpg",
+"pareja": "Su compañero en el cafetal: Murciélago nectarívoro."
+},
+{
+"id": 24,
+"slug": "ojoche",
+"nombre": "Ojoche",
+"tipo": "sombra",
+"nota": "Árbol de frutos pequeños y nutritivos, muy buscados por tucanes y otras aves.",
+"img": "img/cartas/ojoche.jpg",
+"pareja": "Su compañero en el cafetal: Tucán pico iris."
+},
+{
+"id": 25,
+"slug": "platanera-de-orilla",
+"nombre": "Platanera de orilla",
+"tipo": "musacea",
+"nota": "Plátanos sembrados a la orilla del cafetal, que dan sombra rápida y comida.",
+"img": "img/cartas/platanera-de-orilla.jpg"
+},
+{
+"id": 26,
+"slug": "platano-cuadrado",
+"nombre": "Plátano cuadrado",
+"tipo": "musacea",
+"nota": "Musácea de fruto anguloso, muy común en la cocina rural.",
+"img": "img/cartas/platano-cuadrado.jpg"
+},
+{
+"id": 27,
+"slug": "banano-criollo",
+"nombre": "Banano criollo",
+"tipo": "musacea",
+"nota": "Banano de patio que acompaña al café y alimenta a la familia en tiempo de cosecha.",
+"img": "img/cartas/banano-criollo.jpg"
+},
+{
+"id": 28,
+"slug": "guineo",
+"nombre": "Guineo",
+"tipo": "musacea",
+"nota": "Nombre popular de los bananos pequeños que crecen entre las matas de café.",
+"img": "img/cartas/guineo.jpg"
+},
+{
+"id": 29,
+"slug": "chira",
+"nombre": "Chira",
+"tipo": "musacea",
+"nota": "La gran flor morada del banano, de la que nacen las manos de fruta.",
+"img": "img/cartas/chira.jpg"
+},
+{
+"id": 30,
+"slug": "helechera",
+"nombre": "Helechera",
+"tipo": "sotobosque",
+"nota": "Helechos que cubren las orillas húmedas y sostienen el suelo junto a la quebrada.",
+"img": "img/cartas/helechera.jpg"
+},
+{
+"id": 31,
+"slug": "hojarasca",
+"nombre": "Hojarasca",
+"tipo": "sotobosque",
+"nota": "La capa de hojas caídas que protege el suelo, guarda humedad y lo abona.",
+"img": "img/cartas/hojarasca.jpg"
+},
+{
+"id": 32,
+"slug": "mozote",
+"nombre": "Mozote",
+"tipo": "sotobosque",
+"nota": "Hierba de semillas pegajosas, típica de orillas y bordes del cafetal.",
+"img": "img/cartas/mozote.jpg"
+},
+{
+"id": 33,
+"slug": "zacate-de-orilla",
+"nombre": "Zacate de orilla",
+"tipo": "sotobosque",
+"nota": "Pastos altos que crecen junto al agua y frenan la erosión de la ribera.",
+"img": "img/cartas/zacate-de-orilla.jpg"
+},
+{
+"id": 34,
+"slug": "monte-bajo",
+"nombre": "Monte bajo",
+"tipo": "sotobosque",
+"nota": "Vegetación baja que se deja crecer para proteger la quebrada.",
+"img": "img/cartas/monte-bajo.jpg"
+},
+{
+"id": 35,
+"slug": "quebrada-honda",
+"nombre": "Quebrada honda",
+"tipo": "agua",
+"nota": "Quebrada encajonada entre paredes de roca y musgo, que baja con fuerza por la ladera.",
+"img": "img/cartas/quebrada-honda.jpg"
+},
+{
+"id": 36,
+"slug": "naciente",
+"nombre": "Naciente",
+"tipo": "agua",
+"nota": "El lugar donde brota el agua. Protegerla es cuidar a toda la comunidad.",
+"img": "img/cartas/naciente.jpg"
+},
+{
+"id": 37,
+"slug": "acequia",
+"nombre": "Acequia",
+"tipo": "agua",
+"nota": "Canal abierto que lleva el agua por la finca.",
+"img": "img/cartas/acequia.jpg"
+},
+{
+"id": 38,
+"slug": "canoa-de-agua",
+"nombre": "Canoa de agua",
+"tipo": "agua",
+"nota": "Canal hecho de madera o tronco ahuecado para conducir el agua.",
+"img": "img/cartas/canoa-de-agua.jpg"
+},
+{
+"id": 39,
+"slug": "poza",
+"nombre": "Poza",
+"tipo": "agua",
+"nota": "Remanso de agua quieta en el cauce de la quebrada.",
+"img": "img/cartas/poza.jpg"
+},
+{
+"id": 40,
+"slug": "patio-de-secado",
+"nombre": "Patio de secado",
+"tipo": "caseta",
+"nota": "Donde el grano se extiende al sol y se le da vuelta con el rastrillo hasta secarlo.",
+"img": "img/cartas/patio-de-secado.jpg"
+},
+{
+"id": 41,
+"slug": "caseta-del-beneficio",
+"nombre": "Caseta del beneficio",
+"tipo": "caseta",
+"nota": "Donde se procesa el café: se despulpa, se lava y se prepara para secar.",
+"img": "img/cartas/caseta-del-beneficio.jpg"
+},
+{
+"id": 42,
+"slug": "recibidor",
+"nombre": "Recibidor",
+"tipo": "caseta",
+"nota": "Donde se entrega y se mide el café recién cogido, cajuela por cajuela.",
+"img": "img/cartas/recibidor.jpg"
+},
+{
+"id": 43,
+"slug": "colmena-de-jicote",
+"nombre": "Colmena de jicote",
+"tipo": "colmena",
+"nota": "Colmena de abejas nativas sin aguijón, guardada tradicionalmente en un tronco.",
+"img": "img/cartas/colmena-de-jicote.jpg"
+},
+{
+"id": 44,
+"slug": "apiario-de-la-loma",
+"nombre": "Apiario de la loma",
+"tipo": "colmena",
+"nota": "Cajas de abejas junto al cafetal. Las abejas mejoran la polinización de la flor del café.",
+"img": "img/cartas/apiario-de-la-loma.jpg"
+},
+{
+"id": 45,
+"slug": "jornal-de-cogida",
+"nombre": "Jornal de cogida",
+"tipo": "jornal",
+"nota": "El pago por la jornada de recolección, que se mide en cajuelas.",
+"img": "img/cartas/jornal-de-cogida.jpg"
+},
+{
+"id": 46,
+"slug": "cuadrilla",
+"nombre": "Cuadrilla",
+"tipo": "jornal",
+"nota": "El grupo de personas recolectoras que trabaja junto en los surcos.",
+"img": "img/cartas/cuadrilla.jpg"
+},
+{
+"id": 47,
+"slug": "mano-vuelta",
+"nombre": "Mano vuelta",
+"tipo": "jornal",
+"nota": "Costumbre de prestarse trabajo entre vecinos: hoy te ayudo yo, mañana me ayudás vos.",
+"img": "img/cartas/mano-vuelta.jpg"
+},
+{
+"id": 48,
+"slug": "boyero",
+"nombre": "Boyero",
+"tipo": "jornal",
+"nota": "Quien guía la carreta de bueyes que sacaba el café de la finca.",
+"img": "img/cartas/boyero.jpg"
+},
+{
+"id": 49,
+"slug": "casa-de-la-alegria",
+"nombre": "Casa de la Alegría",
+"tipo": "social",
+"nota": "Espacio de cuido para las hijas e hijos de las familias recolectoras durante la cosecha.",
+"img": "img/cartas/casa-de-la-alegria.jpg"
+},
+{
+"id": 50,
+"slug": "poliza-de-riesgos",
+"nombre": "Póliza de riesgos del trabajo",
+"tipo": "social",
+"nota": "Seguro que protege a quienes trabajan en la finca ante accidentes laborales.",
+"img": "img/cartas/poliza-de-riesgos.jpg"
+},
+{
+"id": 51,
+"slug": "albergue-de-temporada",
+"nombre": "Albergue de temporada",
+"tipo": "social",
+"nota": "Vivienda digna para las familias que llegan a trabajar en la cosecha.",
+"img": "img/cartas/albergue-de-temporada.jpg"
+},
+{
+"id": 52,
+"slug": "la-segua",
+"nombre": "La Segua",
+"tipo": "leyenda",
+"nota": "Mujer hermosa que se aparece en los caminos y revela una cabeza de caballo. Leyenda costarricense.",
+"img": "img/cartas/la-segua.jpg"
+},
+{
+"id": 53,
+"slug": "el-cadejo",
+"nombre": "El Cadejo",
+"tipo": "leyenda",
+"nota": "Gran perro negro de ojos encendidos que arrastra cadenas por los caminos de noche.",
+"img": "img/cartas/el-cadejo.jpg"
+},
+{
+"id": 54,
+"slug": "la-llorona",
+"nombre": "La Llorona",
+"tipo": "leyenda",
+"nota": "Espíritu que vaga llorando junto a los ríos y quebradas.",
+"img": "img/cartas/la-llorona.jpg"
+},
+{
+"id": 55,
+"slug": "guaria-morada",
+"nombre": "Guaria morada",
+"tipo": "decoracion",
+"nota": "La flor nacional de Costa Rica, una orquídea que crece sobre los árboles.",
+"img": "img/cartas/guaria-morada.jpg"
+},
+{
+"id": 56,
+"slug": "orquidea-blanca",
+"nombre": "Orquídea blanca del cafetal",
+"tipo": "decoracion",
+"nota": "Orquídea pequeña que florece sobre las ramas de la sombra.",
+"img": "img/cartas/orquidea-blanca.jpg"
+},
+{
+"id": 57,
+"slug": "epifitas-del-dosel",
+"nombre": "Epífitas del dosel",
+"tipo": "decoracion",
+"nota": "Bromelias, musgos y otras plantas que viven sobre los árboles sin dañarlos.",
+"img": "img/cartas/epifitas-del-dosel.jpg"
+},
+{
+"id": 58,
+"slug": "veranera-en-cerca",
+"nombre": "Veranera en cerca",
+"tipo": "decoracion",
+"nota": "Buganvilia en flor sobre la cerca de la finca.",
+"img": "img/cartas/veranera-en-cerca.jpg"
+},
+{
+"id": 59,
+"slug": "yiguirro-cantor",
+"nombre": "Yigüirro cantor",
+"tipo": "fauna",
+"nota": "El ave nacional de Costa Rica. Su canto anuncia la llegada de las lluvias.",
+"img": "img/cartas/yiguirro-cantor.jpg"
+},
+{
+"id": 60,
+"slug": "colibri-esmeralda",
+"nombre": "Colibrí esmeralda",
+"tipo": "fauna",
+"nota": "Visita las flores del café y de la sombra en busca de néctar.",
+"img": "img/cartas/colibri-esmeralda.jpg"
+},
+{
+"id": 61,
+"slug": "morfo-azul",
+"nombre": "Morfo azul",
+"tipo": "fauna",
+"nota": "Mariposa de alas azul metálico que vuela entre la sombra del cafetal.",
+"img": "img/cartas/morfo-azul.jpg"
+},
+{
+"id": 62,
+"slug": "ardilla-trepadora",
+"nombre": "Ardilla trepadora",
+"tipo": "fauna",
+"nota": "Habitante de los árboles de sombra, siempre en busca de frutos y semillas.",
+"img": "img/cartas/ardilla-trepadora.jpg"
+},
+{
+"id": 63,
+"slug": "venado-cola-blanca",
+"nombre": "Venado cola blanca",
+"tipo": "fauna",
+"nota": "Símbolo nacional de la fauna costarricense.",
+"img": "img/cartas/venado-cola-blanca.jpg"
+},
+{
+"id": 64,
+"slug": "pinzon-del-cafetal",
+"nombre": "Pinzón del cafetal",
+"tipo": "fauna",
+"nota": "Pequeña ave de semillas que se mueve entre las matas de café.",
+"img": "img/cartas/pinzon-del-cafetal.jpg"
+},
+{
+"id": 65,
+"slug": "zorro-pelon",
+"nombre": "Zorro pelón",
+"tipo": "fauna",
+"nota": "Marsupial nocturno, también llamado tacuacín. Se alimenta de casi todo y limpia el campo.",
+"img": "img/cartas/zorro-pelon.jpg"
+},
+{
+"id": 66,
+"slug": "gusano-raton",
+"nombre": "Gusano ratón",
+"tipo": "fauna",
+"nota": "Oruga peluda de la polilla Podalia orsilochus. Parece suave, pero sus pelos pican mucho.",
+"img": "img/cartas/gusano-raton.jpg"
+},
+{
+"id": 67,
+"slug": "lapa-verde",
+"nombre": "Lapa verde",
+"tipo": "fauna",
+"nota": "Ave en peligro que depende de las semillas del almendro de montaña.",
+"img": "img/cartas/lapa-verde.jpg",
+"pareja": "Su árbol en el cafetal: Almendro de montaña."
+},
+{
+"id": 68,
+"slug": "mono-congo",
+"nombre": "Mono congo",
+"tipo": "fauna",
+"nota": "El mono aullador: su grito se oye a kilómetros. Come hojas de árboles como el guanacaste.",
+"img": "img/cartas/mono-congo.jpg",
+"pareja": "Su árbol en el cafetal: Guanacaste."
+},
+{
+"id": 69,
+"slug": "murcielago-nectarivoro",
+"nombre": "Murciélago nectarívoro",
+"tipo": "fauna",
+"nota": "Poliniza de noche las flores de la ceiba.",
+"img": "img/cartas/murcielago-nectarivoro.jpg",
+"pareja": "Su árbol en el cafetal: Ceiba."
+},
+{
+"id": 70,
+"slug": "tucan-pico-iris",
+"nombre": "Tucán pico iris",
+"tipo": "fauna",
+"nota": "Ave de pico multicolor que dispersa las semillas de árboles como el ojoche.",
+"img": "img/cartas/tucan-pico-iris.jpg",
+"pareja": "Su árbol en el cafetal: Ojoche."
+}
+],
+"zonas": [
+{
+"slug": "los-santos",
+"nombre": "Los Santos",
+"sub": "Zona de altura",
+"texto": "Laderas empinadas y neblina. Terreno quebrado, con muchas curvas de nivel."
+},
+{
+"slug": "valle-central",
+"nombre": "Valle Central",
+"sub": "Entre volcanes",
+"texto": "Cafetales de tradición, con suelos volcánicos y lomas suaves."
+},
+{
+"slug": "valle-occidental",
+"nombre": "Valle Occidental",
+"sub": "Ríos y cañones",
+"texto": "Lomas cortadas por ríos y quebradas, donde el agua manda en el diseño."
+},
+{
+"slug": "zona-norte",
+"nombre": "Zona Norte",
+"sub": "Llanura y lomerío",
+"texto": "Terreno más abierto y bajo, con espacio para surcos largos y sombra dispersa."
+},
+{
+"slug": "brunca",
+"nombre": "Brunca",
+"sub": "Coto Brus · Pérez Zeledón",
+"texto": "Cafetal rodeado de bosque húmedo, con mucha fauna y sombra diversa."
+}
+]
+}
